@@ -1,0 +1,163 @@
+.cajap {
+    width: 1495px;
+    height: 2438px;
+    position: relative;
+    display: block;
+}
+
+.cajabarra {
+    width: 1500px;
+    height: 60px;
+    background: rgb(10, 174, 141);
+}
+
+.cajaloguito {
+    width: 120px;
+    height: 40px;
+    top: 6px;
+    bottom: 3px;
+    left: 80px;
+    position: absolute;
+}
+
+.cajacon1 {
+    width: 212px;
+    height: 50px;
+    left: 400px;
+    position: absolute;
+    border: black solid;
+}
+
+.cajaproducto {
+    width: 212px;
+    height: 50px;
+    top: 4px;
+    left: 700px;
+    position: absolute;
+    border: black solid;
+}
+
+.cajaencuentra {
+    width: 212px;
+    height: 50px;
+    left: 1000px;
+    position: absolute;
+    border: black solid;
+}
+
+.cajaregistrar {
+    width: 212px;
+    height: 50px;
+    left: 1300px;
+    position: absolute;
+    border: black solid;
+}
+
+.cajalogo {
+    background: url("../imagenes/inicio.jpg") no-repeat;
+    width: 1500px;
+    height: 610px;
+    position: relative;
+}
+
+.caja1 {
+    background: url("../imagenes/fondo1.png") repeat;
+    width: 1500px;
+    height: 100px;
+    text-align: center;
+}
+
+.posicion {
+    font-family: fantasy;
+    text-align: center;
+    font-size: 30px;
+    top: 90px;
+}
+
+.cajamenu {
+    width: 1500px;
+    height: 300px;
+    position: relative;
+}
+
+.cajaconcepto {
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.caja4 {
+    width: 250px;
+    height: 50px;
+    left: 300px;
+    bottom: 40px;
+    top: 600;
+    position: absolute;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.cajaencuentranos {
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.caja6 {
+    width: 322px;
+    height: 74px;
+    left: 571px;
+    bottom: 60px;
+    top: 210px;
+    position: absolute;
+    border: solid white;
+}
+
+.cajafin {
+    background: url("../imagenes/fin.png") no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.caja8 {
+    width: 366px;
+    height: 238px;
+    left: 595px;
+    bottom: 60px;
+    top: 70px;
+    position: absolute;
+    border: solid white;
+}
+
+.cajaimgconcep {
+    background: url("../imagenes/imconcep.jpg") no-repeat;
+    width: 1500px;
+    height: 180px;
+    position: relative;
+    border: solid black;
+}
+
+.cajaimgconcepss {
+    background: url("../imagenes/conceptoss.png") no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.cajafondoconcepss {
+    background: url("../imagenes/fondo2.png")no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.cajaimgconcepto {
+    background: url("../imagenes/imgconcepto.jpg")no-repeat;
+    width: 500px;
+    height: 334px;
+    left: 800px;
+    bottom: 60px;
+    top: 70px;
+    position: absolute;
+}
