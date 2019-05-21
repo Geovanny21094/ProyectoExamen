@@ -17,7 +17,9 @@
 			<ul><li><a href="nubicacion.php">UBICACION</a></li></ul>
 			<ul><li><a href="contacto.php" target="_blank" title="contactanos">CONTACTOS</a></li></ul>
 			<ul><li><a href="acerca.php">ACERCA DE</a></li></ul>
-			<ul><li><a href="login.php">INICIAR SESION</a></li></ul>
+			<ul><li><a href="login.php">ADMINISTRACION</a></li></ul>
+			<ul><li><a href="loginCliente.php">CLIENTES</a></li></ul>
+			
 		</nav>
 	</header>
 
