@@ -14,43 +14,29 @@
     <section class="principal">
         <div>
             <h3>REGISTRAR PRODUCTOS NUEVOS</h3>
-			<form class="crud" action="guardar.php" method="POST">
+			<form class="crud" action="guardarProductos.php" method="POST">
 				<table>
                     <tr>
-                        <td class="etiqueta"><label for="lblCedula"> Cedula: </label> </td>
-                        <td><input type="text" name="cedula" placeholder="Escriba su DNI" id="lblCedula"></td>
+                        <td class="etiqueta"><label for="lblCategoria"> Categoria: </label> </td>
+                        <td><input type="text" name="categoria" placeholder="Escriba la categoria" id="lblCategoria"></td>
                     </tr>
 
     				<tr>
         				<td class="etiqueta"> <label for="lblNombre"> Nombre: </label> </td>
-        		          <td> <input type="text" name="nombre" placeholder="Escriba su Nombre *" id="lblNombre" > </td>
+        		          <td> <input type="text" name="nombre" placeholder="Escriba el nombre *" id="lblNombre" > </td>
         			</tr>
 
         			<tr>
-        				<td class="etiqueta"><label for="lblApellido"> Apellido: </label> </td>
-        				<td><input type="text" name="apellido" placeholder="Escriba su apellido *" id="lblApellido"></td>
+        				<td class="etiqueta"><label for="lblPrecio"> Precio: </label> </td>
+        				<td><input type="text" name="precio" placeholder="Escriba el precio *" id="lblPrecio"></td>
         			</tr>
 
     				<tr>
-        				<td class="etiqueta"><label for="lblEdad"> Edad: </label> </td>
-        				<td><input type="text" name="edad" placeholder="Escriba su edad *" id="lblEdad"></td>
+        				<td class="etiqueta"><label for="lblStock"> Stock: </label> </td>
+        				<td><input type="text" name="stock" placeholder="Escriba el stock *" id="lblStock"></td>
         			</tr>
 
-    				<tr>
-        				<td class="etiqueta"><label for="lblEmail"> Email: </label> </td>
-        				<td><input type="text" name="email" placeholder="Escriba su email *" id="lblEmail" ></td>
-        			</tr>
-
-        			<tr>
-        				<td class="etiqueta"><label for="lblTelefono"> Telefono: </label> </td>
-        				<td><input type="text" name="telefono" placeholder="Escriba su telefono*" id="lblTelefono" ></td>
-        			</tr> 
-
-                    <tr>
-                        <td class="etiqueta"><label for="lblDireccion"> Direccion: </label> </td>
-                        <td><input type="text" name="direccion" placeholder="Escriba su direccion *" id="lblDireccion" ></td>
-                    </tr> 
-
+    
         			   				
     				<tr height="15px"></tr>
 
