@@ -12,45 +12,69 @@
 }
 
 .cajaloguito {
-    width: 120px;
-    height: 40px;
+    width: 116px;
+    height: 20px;
     top: 6px;
     bottom: 3px;
-    left: 80px;
+    left: 60px;
     position: absolute;
 }
 
 .cajacon1 {
-    width: 212px;
+    top: 4px;
+    width: 162px;
     height: 50px;
-    left: 400px;
+    left: 360px;
     position: absolute;
-    border: black solid;
+}
+
+.cajamision {
+    top: 6px;
+    width: 113px;
+    height: 50px;
+    top: 4px;
+    left: 550px;
+    position: absolute;
+}
+
+.cajavision {
+    width: 113px;
+    height: 50px;
+    top: 4px;
+    left: 663px;
+    position: absolute;
 }
 
 .cajaproducto {
-    width: 212px;
+    width: 162px;
     height: 50px;
     top: 4px;
-    left: 700px;
+    left: 776px;
     position: absolute;
-    border: black solid;
 }
 
 .cajaencuentra {
-    width: 212px;
+    top: 4px;
+    width: 162px;
     height: 50px;
-    left: 1000px;
+    left: 940px;
     position: absolute;
-    border: black solid;
 }
 
-.cajaregistrar {
-    width: 212px;
+.cajaadministrador {
+    top: 4px;
+    width: 162px;
+    height: 50px;
+    left: 1130px;
+    position: absolute;
+}
+
+.cajaclientes {
+    top: 4px;
+    width: 162px;
     height: 50px;
     left: 1300px;
     position: absolute;
-    border: black solid;
 }
 
 .cajalogo {
@@ -135,7 +159,6 @@
     width: 1500px;
     height: 180px;
     position: relative;
-    border: solid black;
 }
 
 .cajaimgconcepss {
@@ -145,8 +168,36 @@
     position: relative;
 }
 
+.cajaimgfondo1mision {
+    background: url("../imagenes/fondomision1.jpg")no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
 .cajafondoconcepss {
     background: url("../imagenes/fondo2.png")no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.cajafondomision {
+    background: url("../imagenes/fondomision.png")no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.cajaimgfondovision {
+    background: url("../imagenes/fondovision.png")no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.cajafondovision1 {
+    background: url("../imagenes/fondovision1.png")no-repeat;
     width: 1500px;
     height: 500px;
     position: relative;
