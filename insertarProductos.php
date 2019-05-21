@@ -5,15 +5,15 @@
     <script language="JavaScript" type="text/javascript" src="./validaciones.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./estilosGenerales.css">
-    <title>Ingresar Registro</title>
+    <title>Ingresar Producto Nuevo</title>
 </head>
 <body>
     <header>
-        <h2>DON RAFAe</h2>
+        <h2>Sweet</h2>
     </header>
     <section class="principal">
         <div>
-            <h3>NUEVO REGISTRO</h3>
+            <h3>REGISTRAR PRODUCTOS NUEVOS</h3>
 			<form class="crud" action="guardar.php" method="POST">
 				<table>
                     <tr>
