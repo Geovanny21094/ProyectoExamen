@@ -1,0 +1,63 @@
+*{
+border-style:dotted;
+}
+
+body{
+text-align:justify;
+background-repeat:  url("../imagenes/fondo.Logotipo.jpg"); 
+}
+
+
+.especial {
+	color: blue;
+}
+
+.es{font-size: 11px;}
+.error{font-weight: bold;}
+
+#titulos{
+color: White;
+background-color: Gray;}
+
+p {
+ word-spacing: 4mm;
+ font_size:12pt;
+}
+
+span{
+    font_size:5pc;
+    color: green;	
+}
+
+body{
+margin: 0.5in;}
+
+h2{
+color:orange;
+text-align:center;
+background-color: red;
+}
+
+
+
+a {
+font-size: 1pc;
+color: white;}
+
+section{
+width:85%;
+margin-bottom:4px;
+}
+
+article {
+background:#e6e6e6;
+margin-bottom:5%;
+padding:10px;
+}
+
+footer{
+text-align:center;}
+
+caja1{
+	
+}

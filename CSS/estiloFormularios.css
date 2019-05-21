@@ -1,0 +1,99 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+body{
+	text-align:justify;
+	background: #ff9933;
+}
+
+header{
+	 text-align: center;
+ 	 color: white;
+   background: DarkRed;
+}
+
+header, .principal, footer{
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+
+}
+
+.principal article{
+  padding: 20px;
+  margin-bottom: 20px;
+  background-image: url(../imagenes/fondo1.jpg); 
+}
+
+label {
+	color:black;
+	font-size: 14px;
+}
+
+form  {
+  width: 500px;
+  margin: 20px auto;
+  background: rgba(0,0,0,0.4);
+  padding: 15px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+/*
+.bloqueTabla{
+	padding: 15px;
+  color: black;
+  border: 2px solid black;
+  width: 450px;
+  border-radius: 7px;
+}
+*/
+
+input[type = text] {
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 4px 0px 12px black inset;
+}
+
+table{
+  display: block;
+}
+
+label, input[type = text] {
+  width: 330px;
+	margin-bottom:20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 14px;
+	
+}
+
+input[type='button']{
+float: right;
+}
+
+input[type = button], input[type = submit] {
+    background-color: DarkRed; /* Green */
+    border-radius: 4px;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+ 
+}
+
+
+footer{
+ text-align: center;
+  background: DarkRed;
+  color: white;
+}
+
+

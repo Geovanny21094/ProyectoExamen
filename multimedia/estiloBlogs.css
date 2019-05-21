@@ -1,0 +1,104 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	background: #303030;
+	text-align:justify;
+}
+
+header{
+	background-image: url(../imagenes/logoNETCAUS4.png);
+	text-align: center;
+}
+
+header, .principal, footer{
+	width: 90%;
+	max-width: 1100px;
+	margin: 20px auto;
+}
+
+
+header div{
+	margin: 10px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	color: white;
+}
+
+header nav {
+	background: #e60000; 
+	overflow: hidden; /* Oculta el contenido que sobre pasa el contenedor
+						Limpia los float:left*/
+}
+
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a{
+	padding: 10px 20px;
+	display: block;  /*aplica el padding arriba y abajo */
+	color: white;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	color:#00FF00;
+}
+
+
+.principal .articles {
+	width: 68.5%;
+	float: left;
+	margin-right:1.5% 
+
+}
+
+.principal .articles article{
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+.principal .acerca_DE article{
+	padding: 20px;
+	background: Gray;
+	margin-bottom: 20px;
+	color:white;
+}
+
+ aside {
+	width: 30%;
+	background: rgba(255, 255, 255,0.3);
+	float: left;
+	padding: 20px;
+	box-sizing: border-box; /*averiguar este propiedad*/
+	margin-bottom: 15px;
+	color:white;
+	overflow: hidden;
+	}
+
+#acerca_de, footer{
+	background: #e60000;
+	color: white;
+	clear: both; /*limpia los float:letf, sala la linea como invisible*/
+	padding: 10px 0px;
+	text-align: center;
+}
+
+h2, a{
+	color: white;
+	text-decoration: none;
+}
+
+#encabezado{
+	height: 200px;
+}
