@@ -27,8 +27,8 @@
 		<nav>
 			<ul><li><a href="listadoClientes.php">CLIENTES</a></li></ul>
 			
-			<ul><li><a href="listadoProductos.php">PRODUCTOS</a></li></ul>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
-
+			<ul><li><a href="listadoProductos.php">LISTA PRODUCTOS</a></li></ul>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
+			<ul><li><a href="insertarProductos.php">INGRESAR PRODUCTOS</a></li></ul>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
 
 			<ul><li><a href="pedido.php">PEDIDOS</a></li></ul>
 			

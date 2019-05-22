@@ -48,7 +48,7 @@
         			</tr>
                     <tr>
                         <td colspan="2" style="text-align:center">
-                            <h4><a href="index.php" title="Regresar pagina Anterior">VOLVER</a></h4>
+                            <h4><a href="listadoProductos.php" title="Regresar pagina Anterior">VOLVER</a></h4>
                         </td>
                     </tr>
 				</table>
