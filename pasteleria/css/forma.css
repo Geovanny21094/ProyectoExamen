@@ -203,6 +203,25 @@
     position: relative;
 }
 
+.cajafondocontacto {
+    background: url("../imagenes/contacto.png")no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.cajafondomapa {
+    background: url("../imagenes/mapa.png")no-repeat;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+.cajadelmapa {
+    left: 320px;
+    position: absolute;
+}
+
 .cajaimgconcepto {
     background: url("../imagenes/imgconcepto.jpg")no-repeat;
     width: 500px;
