@@ -22,6 +22,7 @@
 	<header>
 		<div >
 			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
+			<p><a href="cerrarsesion.php" title="Cerrar Sesion">Cerrar Sesion</a></p>
 		</div>
 
 		<nav>
@@ -33,7 +34,8 @@
 			<ul><li><a href="pedido.php">PEDIDOS</a></li></ul>
 			
 			<ul><li><a href="facturas.php">CARRITO</a></li></ul>
-			<ul><li><a href="cerrarsesion.php" title="Cerrar Sesion">Cerrar Sesion</a></li></ul>
+			<ul><li><a href="facturas.php">SUCURSALES</a></li></ul>
+			
 		</nav>
 	</header>
 	
