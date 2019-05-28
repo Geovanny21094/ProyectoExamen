@@ -14,6 +14,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estiloBlogs.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/forma.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
 	<title>Lista de Registros</title>
 </head>
@@ -21,11 +22,12 @@
 <body>
 	<header>
 		<div >
-			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
-			<p><a href="../../../config/cerrarsesion.php" title="Cerrar Sesion" >Cerrar Sesion</a></p>
+			<p class="cajabienvenido" >Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
+			<a  class="cajaloguito1"> <img src="../../../imagenes/loguito.png"></a>
+			<p class=" cajacerrar"><a href="cerrarsesion.php" title="Cerrar Sesion">Cerrar Sesion</a></p>
 		</div>
 
-		<nav>
+		<nav >
 			<ul><li><a href="listadoClientes.php">CLIENTES</a></li></ul>
 			
 			<ul><li><a href="listadoProductos.php">PRODUCTOS</a></li></ul>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
@@ -46,7 +48,8 @@
 			<h3>LISTA DE PRODUCTOS</h3>
 			<p><a href="insertarProductos.php" style="color:black;">Ingresar nuevo producto</a></p>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
 			<div id="bloqueDatosUsuario">
-			
+			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
+			<h4><a href="cerrarsesion.php" title="Cerrar Sesion">Cerrar Sesion</a></h4>
 			</div>
 		
 		<br>
@@ -133,7 +136,7 @@
 	</section>
 
 	<footer>
-		<h4>Universidad  Politecnica Salesiana 2019</h4>
+		<h4>Andres Usiña - Braulio Castro - (c) Universidad  Politecnica Salesiana 2018</h4>
 	</footer>
 </body>
 </html>
