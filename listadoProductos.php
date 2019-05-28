@@ -65,6 +65,7 @@
 			<form method="post" action="eliminadoMultiple.php">
 			<table id= "tablaRegistros">
 			<tr>
+			<th>Codigo</th>
 				<th>Categoria</th>
 				<th>Nombre</th>
 				<th>Precio</th>
@@ -102,6 +103,7 @@
 			
 			<tr>
 				<!-- la variable row imprimira todos los valores de cada columna de la tabla de la base de datos -->
+				<td><?php echo $row['pro_codigo']; ?></td>
 				<td><?php echo $row['pro_categoria']; ?></td>
 				<td><?php echo $row['pro_nombre']; ?></td>
 				<td><?php echo $row['pro_precio']; ?></td>
@@ -111,11 +113,11 @@
 				<!-- en los botones, al momento de hacer clic redirecciona a las paginas de actualizar y modificar
 					y envia el ID de la tabla de registros asignado a una variablle llamada "id", en este caso es la cedula
 				-->
-				<td><button id="btnEliminar" type="button" value="Eliminar" onclick = "location='eliminar.php?id=<?php echo $row['cedula']; ?>'">Eliminar</button>
-					<button id="btnActualizar" type="button" value="Modificar" onclick = "location='modificar.php?id=<?php echo $row['cedula']; ?>'">Modificar</button>
+				<td><button id="btnEliminar" type="button" value="Eliminar" onclick = "location='eliminarProducto.php?id=<?php echo $row['pro_codigo']; ?>'">Eliminar</button>
+					<button id="btnActualizar" type="button" value="Modificar" onclick = "location='modificarProducto.php?id=<?php echo $row['pro_codigo']; ?>'">Modificar</button>
 				</td>
 				<td>
-					<input type="checkbox" name="cedulasRegistros[]" value="<?php echo $row['cedula'] ?>">
+					<input type="checkbox" name="cedulasRegistros[]" value="<?php echo $row['pro_codigo'] ?>">
 				</td>
 			</tr>
 
