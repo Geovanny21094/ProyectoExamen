@@ -14,6 +14,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estiloBlogs.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/forma.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
 	<title>Lista de Registros</title>
 </head>
@@ -21,8 +22,9 @@
 <body>
 	<header>
 		<div >
-			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
-			<p><a href="../../../config/cerrarsesion.php" title="Cerrar Sesion" >Cerrar Sesion</a></p>
+			<p class="cajabienvenido" >Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
+			<a  class="cajaloguito1"> <img src="../../../imagenes/loguito.png"></a>
+			<p class="cajacerrar"><a href="../../../config/cerrarsesion.php" title="Cerrar Sesion" >Cerrar Sesion</a></p>
 		</div>
 
 		<nav>
