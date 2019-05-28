@@ -35,7 +35,7 @@
 			
 			<ul><li><a href="facturas.php">CARRITO</a></li></ul>
 			<ul><li><a href="facturas.php">SUCURSALES</a></li></ul>
-
+			
 		</nav>
 	</header>
 	
@@ -43,8 +43,8 @@
 
 		<div>
 
-			<h3>LISTA DE PRODUCTOS</h3>
-			<p><a href="insertarProductos.php" style="color:black;">Ingresar nuevo producto</a></p>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
+			<h3>LISTA DE SUCURSALES</h3>
+			<p><a href="insertarSucursal.php" style="color:black;">Ingresar nueva sucursal</a></p>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
 			<div id="bloqueDatosUsuario">
 			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
 			<h4><a href="cerrarsesion.php" title="Cerrar Sesion">Cerrar Sesion</a></h4>
@@ -65,10 +65,10 @@
 			<form method="post" action="eliminadoMultiple.php">
 			<table id= "tablaRegistros">
 			<tr>
-				<th>Categoria</th>
+			
 				<th>Nombre</th>
-				<th>Precio</th>
-				<th>Stock</th>
+				<th>Direccion</th>
+				<th>Telefono</th>
 				<th>Acciones</th>
 				<th>Borr. Multiple</th>
 			</tr>
@@ -79,20 +79,20 @@
                 if(isset($_POST[1])){
                    
                  //  $sql = "SELECT * FROM registros"; 
-                $descripcion = $_POST['pro_descripcion'];
-                echo($descripcion);
-                $sql = "SELECT * FROM producto WHERE pro_descripcion='$descripcion'"; 
+                $apellido = $_POST['apellido'];
+                echo($apellido);
+                $sql = "SELECT * FROM clientes WHERE apellido='$apellido'"; 
                    
                 }else{
                     
-                  $sql = "SELECT * FROM producto"; 
+                  $sql = "SELECT * FROM clientes"; 
                    
                 }
                     $resultado = $conexion->query($sql); 
                 // $sql = "SELECT * FROM registros"; 
                  // $sql = "SELECT * FROM registros WHERE cedula='$cedula'"; 
                 if(isset($_POST[2])){
-                  $sql = "SELECT * FROM producto";    
+                  $sql = "SELECT * FROM clientes";    
                 }
                
 				// output data of each row
@@ -102,11 +102,13 @@
 			
 			<tr>
 				<!-- la variable row imprimira todos los valores de cada columna de la tabla de la base de datos -->
-				<td><?php echo $row['pro_categoria']; ?></td>
-				<td><?php echo $row['pro_nombre']; ?></td>
-				<td><?php echo $row['pro_precio']; ?></td>
-				<td><?php echo $row['pro_stock']; ?></td>
-			
+				<td><?php echo $row['cedula']; ?></td>
+				<td><?php echo $row['nombre']; ?></td>
+				<td><?php echo $row['apellido']; ?></td>
+				<td><?php echo $row['edad']; ?></td>
+				<td><?php echo $row['email']; ?></td>
+				<td><?php echo $row['telefono']; ?></td>
+				<td><?php echo $row['direccion']; ?></td>
 
 				<!-- en los botones, al momento de hacer clic redirecciona a las paginas de actualizar y modificar
 					y envia el ID de la tabla de registros asignado a una variablle llamada "id", en este caso es la cedula
