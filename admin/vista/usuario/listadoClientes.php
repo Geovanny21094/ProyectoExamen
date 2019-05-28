@@ -14,6 +14,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estiloBlogs.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/forma.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
 	<title>Lista de Registros</title>
 </head>
@@ -21,9 +22,11 @@
 <body>
 	<header>
 		<div >
-			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
+			<p class="cajabienvenido" >Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
 
-			<p><a href="../../../config/cerrarsesion.php" title="Cerrar Sesion" >Cerrar Sesion</a></p>
+			<a  class="cajaloguito1"> <img src="../../../imagenes/loguito.png"></a>
+			
+			<p class=" cajacerrar"><a href="../../../config/cerrarsesion.php" title="Cerrar Sesion" >Cerrar Sesion</a></p>
 			
 		</div>
 
@@ -118,7 +121,7 @@
 				<td><button id="btnEliminar" type="button" value="Eliminar" onclick = "location='eliminar.php?id=<?php echo $row['cedula']; ?>'">Eliminar</button>
 					<button id="btnActualizar" type="button" value="Modificar" onclick = "location='modificar.php?id=<?php echo $row['cedula']; ?>'">Modificar</button>
 				</td>
-					
+				
 			</tr>
 
 			<?php
