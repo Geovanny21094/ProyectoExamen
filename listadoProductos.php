@@ -44,7 +44,7 @@
 		<div>
 
 			<h3>LISTA DE PRODUCTOS</h3>
-			
+			<p><a href="insertarProductos.php" style="color:black;">Ingresar nuevo producto</a></p>  <!-- CODIGO AÑADIDO y archivo LISTADO PRODUCTOS-->
 			<div id="bloqueDatosUsuario">
 			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
 			<h4><a href="cerrarsesion.php" title="Cerrar Sesion">Cerrar Sesion</a></h4>
