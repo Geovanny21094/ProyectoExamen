@@ -110,7 +110,7 @@
 				<!-- en los botones, al momento de hacer clic redirecciona a las paginas de actualizar y modificar
 					y envia el ID de la tabla de registros asignado a una variablle llamada "id", en este caso es la cedula
 				-->
-				<td><button id="btnEliminar" type="button" value="Eliminar" onclick = "location='eliminar.php?id=<?php echo $row['cedula']; ?>'">Eliminar</button>
+				<td><button id="btnEliminar" type="button" value="Eliminar" onclick = "location='eliminarSucursal.php?id=<?php echo $row['suc_codigo']; ?>'">Eliminar</button>
 					<button id="btnActualizar" type="button" value="Modificar" onclick = "location='modificarSucursal.php?id=<?php echo $row['suc_codigo']; ?>'">Modificar</button>
 				</td>
 			
