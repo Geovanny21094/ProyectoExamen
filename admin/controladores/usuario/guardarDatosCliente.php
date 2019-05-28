@@ -17,7 +17,8 @@ include("../../../config/conexion.php");
 	if(!$ejecutar){
 		echo"ERROR: No se pudo insertar correctamente los datos";
 	} else {
-		echo"BIENVENIDO NUEVO USUARIO";
-		header("Location: loginCliente.php");;
+		///echo"BIENVENIDO NUEVO USUARIO";
+
+		header("Location: ../../vista/usuario/loginCliente.php");;
 	}
 ?>

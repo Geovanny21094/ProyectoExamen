@@ -12,14 +12,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
-    <link rel="stylesheet" type="text/css" href="../../../css/forma.css">
-     
     <title>Actualizar Registro</title>
 </head>
 <body>
     <header>
-    <a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"><br></a>
-        <h2><br>PASTELERÍA  DULCE SECRETO</h2><br>
+        <h2>Don Rafa</h2>
     </header>
     <section class="principal">
         <div class="formulario">

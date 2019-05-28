@@ -12,9 +12,10 @@
 	<h2>PASTELERÍA "DULCE SECRETO"</h2>	
     </header>
     <section class="principal">
-        <div>
+        <div>	
             <h3>REGISTRAR NUEVO CLIENTE </h3>
 			<form class="crud" action="../../controladores/usuario/guardarDatosCliente.php" method="POST">
+			
 				<table>
                     <tr>
                         <td class="etiqueta"><label for="lblCedula"> Cedula: </label> </td>

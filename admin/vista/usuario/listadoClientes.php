@@ -14,7 +14,6 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estiloBlogs.css">
-	<link rel="stylesheet" type="text/css" href="../../../css/forma.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
 	<title>Lista de Registros</title>
 </head>
@@ -22,11 +21,9 @@
 <body>
 	<header>
 		<div >
-			<p class="cajabienvenido" >Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
+			<p>Bienvenido: <?php echo $_SESSION['usuario']; ?> </p>
 
-			<a  class="cajaloguito1"> <img src="../../../imagenes/loguito.png"></a>
-			
-			<p class=" cajacerrar"><a href="../../../config/cerrarsesion.php" title="Cerrar Sesion" >Cerrar Sesion</a></p>
+			<p><a href="../../../config/cerrarsesion.php" title="Cerrar Sesion" >Cerrar Sesion</a></p>
 			
 		</div>
 
@@ -66,7 +63,7 @@
 			<center>
 			<form method="post" action="eliminadoMultiple.php">
 			<table id= "tablaRegistros">
-			<tr>
+				<tr>
 				<th>Cedula</th>
 				<th>Nombre</th>
 				<th>Apellido</th>
@@ -76,7 +73,7 @@
 				<th>Direccion</th>
 				<th>Acciones</th>
 				
-			</tr>
+			
 
 			<?php
                 
@@ -121,7 +118,7 @@
 				<td><button id="btnEliminar" type="button" value="Eliminar" onclick = "location='eliminar.php?id=<?php echo $row['cedula']; ?>'">Eliminar</button>
 					<button id="btnActualizar" type="button" value="Modificar" onclick = "location='modificar.php?id=<?php echo $row['cedula']; ?>'">Modificar</button>
 				</td>
-				
+					
 			</tr>
 
 			<?php
