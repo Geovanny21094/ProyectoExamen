@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php 	//conectar el servidor con la base de datos
 include("../../../config/conexion.php");
 	//Recuperar variables del formulario
@@ -19,26 +18,4 @@ include("../../../config/conexion.php");
 	} else {
 		header("Location: ../../vista/usuario/listadoProductos.php");
 	}
-=======
-<?php 	//conectar el servidor con la base de datos
-include("../../../config/conexion.php");
-	//Recuperar variables del formulario
-	$categoria=$_POST['categoria'];
-	$nombre=$_POST['nombre'];
-	$precio=$_POST['precio'];
-	$stock=$_POST['stock'];
-	
-	//Se realiza la sentecia para guardar las varibales en la BD
-	$sql="INSERT INTO producto VALUES(0, '$categoria', '$nombre', '$precio', '$stock', 'N', null, null)";
-	
-
-	//Ejecutar la sentencia sql
-	$ejecutar=mysqli_query($conexion,$sql);
-	//verificar la ejecucion
-	if(!$ejecutar){
-		echo"ERROR: No se pudo insertar correctamente los datos";
-	} else {
-		header("Location: ../../vista/usuario/listadoProductos.php");
-	}
->>>>>>> 4571dd2bf1a601f06757ceb7d156e0051ec73f3d
 ?>
