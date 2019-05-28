@@ -19,7 +19,7 @@
 <body>
     <header>
     <a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"><br></a>
-        <h2><br>PASTELERIA DULCE SECRETO</h2><br>
+        <h2><br>PASTELERÍA  DULCE SECRETO</h2><br>
     </header>
     <section class="principal">
         <div class="formulario">
