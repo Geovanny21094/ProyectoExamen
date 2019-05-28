@@ -14,7 +14,7 @@
     <section class="principal">
         <div>
             <h3>REGISTRAR NUEVA SUCURSAL</h3>
-			<form class="crud" action="guardarProductos.php" method="POST">
+			<form class="crud" action="guardarSucursal.php" method="POST">
 				<table>
                     <tr>
                         <td class="etiqueta"><label for="lblNombre"> Nombre: </label> </td>

@@ -79,20 +79,20 @@
                 if(isset($_POST[1])){
                    
                  //  $sql = "SELECT * FROM registros"; 
-                $apellido = $_POST['apellido'];
-                echo($apellido);
-                $sql = "SELECT * FROM clientes WHERE apellido='$apellido'"; 
+                $nombre = $_POST['suc_nombre'];
+                echo($nombre);
+                $sql = "SELECT * FROM sucursales WHERE suc_nombre='$nombre'"; 
                    
                 }else{
                     
-                  $sql = "SELECT * FROM clientes"; 
+                  $sql = "SELECT * FROM sucursales"; 
                    
                 }
                     $resultado = $conexion->query($sql); 
                 // $sql = "SELECT * FROM registros"; 
                  // $sql = "SELECT * FROM registros WHERE cedula='$cedula'"; 
                 if(isset($_POST[2])){
-                  $sql = "SELECT * FROM clientes";    
+                  $sql = "SELECT * FROM sucursales";    
                 }
                
 				// output data of each row
@@ -102,13 +102,11 @@
 			
 			<tr>
 				<!-- la variable row imprimira todos los valores de cada columna de la tabla de la base de datos -->
-				<td><?php echo $row['cedula']; ?></td>
-				<td><?php echo $row['nombre']; ?></td>
-				<td><?php echo $row['apellido']; ?></td>
-				<td><?php echo $row['edad']; ?></td>
-				<td><?php echo $row['email']; ?></td>
-				<td><?php echo $row['telefono']; ?></td>
-				<td><?php echo $row['direccion']; ?></td>
+				
+				<td><?php echo $row['suc_nombre']; ?></td>
+				<td><?php echo $row['suc_direccion']; ?></td>
+				<td><?php echo $row['suc_telefono']; ?></td>
+				
 
 				<!-- en los botones, al momento de hacer clic redirecciona a las paginas de actualizar y modificar
 					y envia el ID de la tabla de registros asignado a una variablle llamada "id", en este caso es la cedula
