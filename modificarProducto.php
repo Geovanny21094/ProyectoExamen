@@ -27,12 +27,22 @@
                     //conectar el servidor con la base de datos
                     include("conexion.php");
                     //Se realiza la sentecia para selecionar los registros en la BD dada la condiciocn y ejecuta la consulta
-                    $sql = "SELECT * FROM producto WHERE pro_codigo ='$id'";
+                    $sql = "SELECT * FROM producto WHERE pro_codigo ='$id'"; 
+
                     $resultado = $conexion->query($sql);
-                    $row = $resultado ->fetch_assoc(); // imprime la fila de la consulta sql
+                    $row=mysqli_fetch_assoc($resultado);
+                    
+                    $codigo=$row['pro_codigo'];
+                    
+                    echo $codigo;
+
+                    ///$row = $resultado ->fetch_assoc(); // imprime la fila de la consulta sql
+
+
+
             ?>
             
-        <form class="crud" action="actualizarProducto.php?id=<?php echo $row['pro_codigo']; ?>" method="POST">
+        <form class="crud" action="actualizarProducto.php?id=<?php echo $codigo ?>" method="POST">
 			               
                 <table>
                     <!--Recupera los datos de la BD e imprime los datos del registro selecionado dada la consulta sql-->
