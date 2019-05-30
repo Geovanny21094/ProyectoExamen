@@ -18,6 +18,7 @@ Esta es la página principal (INDEX.HTML) desde la cual nos vamos a poder mover 
 CARPETA CSS
 
 Esta carpeta contiene los archivos css los cuales nos ayudan con los estilos de las diversas paginas creadas.
+
 (https://github.com/Geovanny21094/ProyectoExamen/blob/master/imagenesReadme/4.png)
 
 
@@ -43,9 +44,11 @@ PAGINA MISION
 
 CODIGO MISION
 De la misma forma creamos divs dentro del body para tener cajas en las cuales se les agrega imágenes las cuales redireccionan en algunos casos.
+
 (https://github.com/Geovanny21094/ProyectoExamen/blob/master/imagenesReadme/9.png)
 
 PAGINA VISION
+
 (https://github.com/Geovanny21094/ProyectoExamen/blob/master/imagenesReadme/10.png)
 
 
