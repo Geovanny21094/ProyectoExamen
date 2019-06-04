@@ -219,3 +219,26 @@ ul {
     background-color:cadetblue;
     border-radius:30px;
 }
+
+
+#tablaProductos{
+
+    margin-left: 180px;
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+  
+    
+    }
+
+
+    table tr th {
+        font-family: cursive;
+       background-color: rgb(63, 182, 142) ;
+      }
+
+
+      table tr td {
+        font-family: cursive;
+        height: 150px;
+      }

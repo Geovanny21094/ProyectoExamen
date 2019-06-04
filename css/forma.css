@@ -231,39 +231,3 @@
     top: 70px;
     position: absolute;
 }
-
-.cajaloguito1 {
-    width: 116px;
-    height: 20px;
-    top: 0px;
-    bottom: 3px;
-    right: 430px;
-    position: relative;
-}
-
-.cajabienvenido {
-    width: 116px;
-    height: 20px;
-    top: 80px;
-    bottom: 3px;
-    right: 430px;
-    position: relative;
-}
-
-.cajacerrar {
-    width: 116px;
-    height: 20px;
-    top: -60px;
-    bottom: 3px;
-    left: 460px;
-    position: relative;
-}
-
-.cajaloguito2 {
-    width: 116px;
-    height: 20px;
-    top: 20px;
-    bottom: 3px;
-    left: 10px;
-    position: relative;
-}

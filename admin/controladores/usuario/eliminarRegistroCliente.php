@@ -2,21 +2,19 @@
 //conectar el servidor con la base de datos
 include("../../../config/conexion.php");
 //Recuperar variables del formulario
-
-	$id=$_GET['id'];
+	$id=$_REQUEST['id'];
 	$nombre=$_POST['nombre'];
-	$direccion=$_POST['direccion'];
+	$apellido=$_POST['apellido'];
+	$edad=$_POST['edad'];
+	$email=$_POST['email'];
 	$telefono=$_POST['telefono'];
-
-
-	date_default_timezone_set("America/Guayaquil"); 
-	$fecha = date('Y-m-d H:i:s', time()); 
-
+	$direccion=$_POST['direccion'];
 //Se realiza la sentecia para eliminar los registros en la BD
-$sql = "UPDATE sucursal_pasteleria  SET suc_eliminado = 'S', suc_fecha_modificacion = '$fecha' WHERE suc_codigo = $id"; 
+$sql = "DELETE FROM clientes WHERE cedula='$id'";
 //Ejecutar la sentencia sql y verificar la ejecucion
 if ($conexion->query($sql) === TRUE) {
-    header("Location: ../../vista/usuario/listadoSucursales.php");
+	 header("Location: ../../../public/vista/");
+	 
 } else {
     echo "Error de actualizacion de datos: " . $conexion->error;
 }

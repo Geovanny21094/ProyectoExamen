@@ -4,15 +4,14 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/forma.css">
+
 	<title>Login</title>
 </head>
 <body>
 
 	<header>
-	
-	<a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"></a><br>	
-	<h2><br>ADMINISTRACIÓN</h2><br>
-
+	<a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"><br></a> 
+		<h2><br>ADMINISTRACIÓN</h2><br>
 		
 	</header>
 	

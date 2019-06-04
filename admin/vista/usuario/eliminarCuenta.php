@@ -1,7 +1,7 @@
  <!DOCTYPE html>
  <?php
     session_start();
-    if(isset($_SESSION['admin'])){
+    if(isset($_SESSION['usuario'])){
      //   echo "sesion exitosa - bienvenido";
     }else{
         header("location: index.php");
@@ -12,45 +12,57 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
-    <title>ELiminar Registro de Sucursal</title>
+    <title>ELiminar Registro</title>
 </head>
 <body>
     <header>
-        <h2>PASTELERIA "DULCE SECRETO"</h2>
+    <h2><br>PASTELERÍA  "DULCE SECRETO"</h2><br>
     </header>
     <section class="principal">
         <div class="formulario">
-            <h3>ELIMINAR REGISTRO</h3>
+            <h3>ELIMINAR CLIENTE</h3>
             <?php
                     $id=$_REQUEST['id']; // <-- Creamos una variable de tipo REQUEST, guardara la variabla ID enviada desde el boton Actualizar
                     //conectar el servidor con la base de datos
                     include("../../../config/conexion.php");
                     //Se realiza la sentecia para eliminar el registros en la BD dada la condiciocn y ejecuta la consulta
-                    $sql = "SELECT * FROM sucursal_pasteleria WHERE suc_codigo ='$id'";
+                    $sql = "SELECT * FROM clientes WHERE cedula ='$id'";
                     $resultado = $conexion->query($sql);
                     $row = $resultado ->fetch_assoc(); // <-- imprime la fila de la consulta sql
             ?>
             
-			<form class="crud" action="../../controladores/usuario/eliminarRegistroSucursal.php?id=<?php echo $row['suc_codigo']; ?>" method="POST">
+			<form class="crud" action="../../controladores/usuario/eliminarRegistroCliente.php?id=<?php echo $row['cedula']; ?>" method="POST">
 				<table>
                    <!--Recupera los datos de la BD e imprime los datos del registro selecionado dada la consulta sql-->
                     <tr>
                         <td class="etiqueta"> <label for="lblNombre"> Nombre: </label> </td>
-                          <td> <input disabled type="text" name="nombre" id="lblNombre" value="<?php echo $row['suc_nombre']; ?>"> </td>
+                          <td> <input disabled type="text" name="nombre" id="lblNombre" value="<?php echo $row['nombre']; ?>"> </td>
                     </tr>
 
                     <tr>
-                        <td class="etiqueta"><label for="lblDireccion"> Direccion: </label> </td>
-                        <td><input disabled type="text" name="direccion" id="lblDireccion" value="<?php echo $row['suc_direccion']; ?>"></td>
+                        <td class="etiqueta"><label for="lblApellido"> Apellido: </label> </td>
+                        <td><input disabled type="text" name="apellido" id="lblApellido" value="<?php echo $row['apellido']; ?>"></td>
                     </tr>
 
+                    <tr>
+                        <td class="etiqueta"><label for="lblEdad"> Edad: </label> </td>
+                        <td><input disabled type="text" name="edad" id="lblEdad" value="<?php echo $row['edad']; ?>"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="etiqueta"><label for="lblEmail"> Email: </label> </td>
+                        <td><input disabled type="text" name="email" id="lblEmail" value="<?php echo $row['email']; ?>"></td>
+                    </tr>
 
                     <tr>
                         <td class="etiqueta"><label for="lblTelefono"> Telefono: </label> </td>
-                        <td><input disabled type="text" name="telefono" id="lblTelefono" value="<?php echo $row['suci_telefono']; ?>" ></td>
+                        <td><input disabled type="text" name="telefono" id="lblTelefono" value="<?php echo $row['telefono']; ?>" ></td>
                     </tr> 
 
-                  
+                    <tr>
+                        <td class="etiqueta"><label for="lblDireccion"> Direccion: </label> </td>
+                        <td><input disabled type="text" name="direccion" id="lblDireccion" value="<?php echo $row['direccion']; ?>"></td>
+                    </tr> 
 
         			   				
     				<tr height="15px"></tr>
@@ -62,7 +74,7 @@
         			</tr>
                     <tr>
                         <td colspan="2" style="text-align:center">
-                            <h4><a href="listadoClientes.php" title="Regresar pagina Anterior">VOLVER</a></h4>
+                            <h4><a href="listadoCuenta.php" title="Regresar pagina Anterior">VOLVER</a></h4>
                         </td>
                     </tr>
 				</table>

@@ -3,21 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
-	<link rel="stylesheet" type="text/css" href="../../../css/forma.css">
 	<title>Login</title>
 </head>
 <body>
 
 	<header>
-	<a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"></a><br>	
-		<h2><br>CLIENTES</h2><br>
+		<h2>CLIENTES</h2>
 	</header>
 	
 	<section class= "principal">
 
 		<div>
 			<h3>INICIO DE SESION</h3>
-				<form id="cuadroLogin" action="verificarCliente.php" method="post">
+				<form id="cuadroLogin" action="../../controladores/usuario/verificarCliente.php" method="post">
 					
 					<table >
 						<tr>
@@ -35,6 +33,15 @@
 						<tr>
 							<td colspan="2" style="text-align:center"><h4><a href="insertarCliente.php" title="Ingresar nuevo registro">REGISTRATE</a></h4></td>
 						</tr>
+
+						<tr>
+						<td colspan="2" style="text-align:center">
+						<br>
+
+                            <h4><a href=" ../../../public/vista/" title="Regresar pagina Anterior">VOLVER</a></h4>
+                        </td>
+						</tr>
+
 					
 					</table>
 				</form>

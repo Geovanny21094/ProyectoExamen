@@ -9,10 +9,14 @@ include("../../../config/conexion.php");
 	$nombre=$_POST['nombre'];
 	$direccion=$_POST['direccion'];
 	$telefono=$_POST['telefono'];
+
+	date_default_timezone_set("America/Guayaquil"); 
+	$fecha = date('Y-m-d H:i:s', time()); 
+
 	//$direccion=$_POST['direccion'];
 	
 //Se realiza la sentecia para actualizar las datos en la BD
-$sql = "UPDATE sucursales SET suc_nombre = '$nombre', suc_direccion ='$direccion', suc_telefono = '$telefono' 
+$sql = "UPDATE sucursal_pasteleria SET suc_nombre = '$nombre', suc_direccion ='$direccion', suci_telefono = '$telefono' ,suc_fecha_modificacion = '$fecha' 
 WHERE suc_codigo='$id'";
 //cho ($sql);
 //Ejecutar la sentencia sql y verificar la ejecucion

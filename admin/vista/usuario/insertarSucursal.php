@@ -4,14 +4,12 @@
 <head>
     <script language="JavaScript" type="text/javascript" src="./validaciones.js"></script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../../../css/forma.css">
     <link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
     <title>Ingresar Producto Nuevo</title>
 </head>
 <body>
     <header>
-    <a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"><br></a>
-        <h2><br>PASTELERÍA  DULCE SECRETO</h2><br>
+    <h2>PASTELERÍA "DULCE SECRETO"</h2>
     </header>
     <section class="principal">
         <div>

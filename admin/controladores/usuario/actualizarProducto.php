@@ -11,9 +11,12 @@ include("../../../config/conexion.php");
 	$stock=$_POST['stock'];
 	//$direccion=$_POST['direccion'];
 	
+	date_default_timezone_set("America/Guayaquil"); 
+	$fecha = date('Y-m-d H:i:s', time()); 
+	
 //Se realiza la sentecia para actualizar las datos en la BD
 $sql = "UPDATE producto SET pro_categoria = '$categoria', pro_nombre ='$nombre', pro_precio = '$precio', 
-pro_stock = '$stock' 
+pro_stock = '$stock' , pro_fecha_modificacion = '$fecha'
 WHERE pro_codigo='$id'";
 //cho ($sql);
 //Ejecutar la sentencia sql y verificar la ejecucion

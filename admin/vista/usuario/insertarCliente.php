@@ -4,20 +4,17 @@
 <head>
     <script language="JavaScript" type="text/javascript" src="./validaciones.js"></script>
     <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../../../css/forma.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
     <title>Ingresar Registro</title>
 </head>
 <body>
     <header>
-	<a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"><br></a>
-        <h2><br>PASTELERÍA  DULCE SECRETO</h2><br>
+	<h2>PASTELERÍA "DULCE SECRETO"</h2>	
     </header>
     <section class="principal">
-        <div>	
+        <div>
             <h3>REGISTRAR NUEVO CLIENTE </h3>
-			<form class="crud" action="../../controladores/usuario/guardarDatosCliente.php" method="POST" enctype="multipart/form-data" > 
-			
+			<form class="crud" action="../../controladores/usuario/guardarDatosCliente.php" method="POST" enctype="multipart/form-data"> 
 				<table>
                     <tr>
                         <td class="etiqueta"><label for="lblCedula"> Cedula: </label> </td>
@@ -59,9 +56,13 @@
                         <td><input type="password" name="contrasena" placeholder="Escriba su contraseña *" id="lblContrasena" ></td>
 						
 					</tr> 
+					
 					<tr>
-					<td class="etiqueta"><label for="archivo">Imagen:</label></td>
-                    <td><input type="file" id="imagen" name="imagen"></td>
+
+					<td class="etiqueta"><label for="archivo">Imagen de Perfil: </label></td>
+					 <td><input type="file" id="imagen" name="imagen"  /></td>
+
+					 
 					</tr>
 					
 					

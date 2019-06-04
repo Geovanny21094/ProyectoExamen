@@ -7,7 +7,8 @@
 	$telefono=$_POST['telefono'];
 	
 	//Se realiza la sentecia para guardar las varibales en la BD
-	$sql="INSERT INTO sucursales VALUES(0, '$nombre', '$direccion', '$telefono', 'N', null, null)";
+	$sql="INSERT INTO sucursal_pasteleria VALUES(0, '$nombre', '$direccion', '$telefono', 'N', null, null,'0106305477')";
+
 	//Ejecutar la sentencia sql
 	$ejecutar=mysqli_query($conexion,$sql);
 	//verificar la ejecucion

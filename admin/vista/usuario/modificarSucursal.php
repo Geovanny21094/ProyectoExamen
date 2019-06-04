@@ -1,7 +1,7 @@
  <!DOCTYPE html>
  <?php
     session_start();
-    if(isset($_SESSION['usuario'])){
+    if(isset($_SESSION['admin'])){
        // echo "sesion exitosa - bienvenido";
     }else{
         header("location: index.php");
@@ -12,13 +12,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
-    <link rel="stylesheet" type="text/css" href="../../../css/forma.css">
     <title>Actualizar Registro</title>
 </head>
 <body>
     <header>
-    <a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"></a><br>	
-        <h2><br>PASTELERIA "DULCE SECRETO"</h2><br>
+        <h2>PASTELERIA "DULCE SECRETO"</h2>
     </header>
     <section class="principal">
         <div class="formulario">
@@ -29,7 +27,7 @@
                     //conectar el servidor con la base de datos
                     include("../../../config/conexion.php");
                     //Se realiza la sentecia para selecionar los registros en la BD dada la condiciocn y ejecuta la consulta
-                    $sql = "SELECT * FROM sucursales WHERE suc_codigo ='$id'"; 
+                    $sql = "SELECT * FROM sucursal_pasteleria WHERE suc_codigo ='$id'"; 
 
                     $resultado = $conexion->query($sql);
                     $row=mysqli_fetch_assoc($resultado);
@@ -65,7 +63,7 @@
 
     				<tr>
         				<td class="etiqueta"><label for="lblTelefono"> Telefono: </label> </td>
-        				<td><input type="text" name="telefono" id="lblTelefono" value="<?php echo $row['suc_telefono']; ?>"></td>
+        				<td><input type="text" name="telefono" id="lblTelefono" value="<?php echo $row['suci_telefono']; ?>"></td>
         			</tr>
 
         		

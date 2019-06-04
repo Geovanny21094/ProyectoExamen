@@ -1,7 +1,7 @@
  <!DOCTYPE html>
  <?php
     session_start();
-    if(isset($_SESSION['usuario'])){
+    if(isset($_SESSION['admin'])){
      //   echo "sesion exitosa - bienvenido";
     }else{
         header("location: index.php");
@@ -11,14 +11,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../../../css/forma.css">
     <link rel="stylesheet" type="text/css" href="../../../css/estilosGenerales.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/forma.css">
     <title>ELiminar Registro</title>
 </head>
 <body>
     <header>
     <a  class="cajaloguito2"> <img src="../../../imagenes/loguito.png"><br></a>
-        <h2><br>PASTELERÍA  DULCE SECRETO</h2><br>
+        <h2><br>PASTELERÍA  "DULCE SECRETO"</h2><br>
     </header>
     <section class="principal">
         <div class="formulario">
